@@ -1,0 +1,46 @@
+header, body, footer {
+    margin: 80px;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #007BFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    color: #ff4d00;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.Azulado {
+    color: rgb(6, 112, 160);
+    text-align: left;
+}
+
+h4 {
+    color: #ffa200;
+}
+
+p, li {
+    color: #333333;
+}
+
+a {
+    color: #0986ec;
+}
+
+button {
+    background-color: #0fa9c7;
+    color: #050d69;
+    padding: 10px 15px;
+    border: none;
+    margin: 5px;
+}
