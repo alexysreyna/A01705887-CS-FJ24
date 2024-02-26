@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.min.css">
     <title>Página de Alexys</title>
     <h1>Página de Alexys Reyna</h1>
 </head>
@@ -103,19 +103,80 @@
 
 <h3>Preguntas Java</h3>
 <h4>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h4>
-<p>Resp</p>
+<p>Según la página oficial de Java, las diferencias radican Java es un lenguaje de programación OOP, mientras que JavaScript es un lenguaje de scripts OOP.</p>
 
 <h4>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</h4>
-<p>Resp</p>
+<ul>
+  <li>Métodos getFullYear(): Nos devuelve el año con 4 dígitos.</li>
+  <li>Método getMinutes(): Nos devuelve los minutos actuales, desde 0 a 59.</li>
+  <li>Método getHours(): Nos devuelve la hora actual, desde 0 a 23  (formato 24 horas).</li>
+  <li>Método getDay(): Nos devuelve el día de la semana del 0 (domingo) al 6 (sábado).</li>
+  <li>Método getDate(): Nos devuelve el día del mes, del 1 al 31.</li> 
+  <li>Método getMonth(): Nos devuelve el número de mes del 0 (enero) al 11 (diciembre).</li>
+</ul>
 
 <h4>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</h4>
-<p>Resp</p>
+<ul>
+  <li>push(): Inserta un elemento al final del arreglo.</li>
+  <li>unshift(): Inserta un elemento al inicio del arreglo.</li>
+  <li>pop(): Remueve un elemento del final del arreglo.</li>
+  <li>shift(): Remueve un elemento del principio del arreglo.</li>
+  <li>slice(): Crea una copia sombra del arreglo.</li>   
+</ul>
 
 <h4>¿Cómo se declara una variable con alcance local dentro de una función?</h4>
-<p>Resp</p>
+<p>Según la Benemérita Universidad Autónoma de Puebla, es aquella cuyo ámbito se restringe a la función que la ha declarado se dice entonces que la variable es local a esa función. Esto implica que esa variable sólo va a poder ser manipulada en dicha sección, y no se podrá hacer referencia fuera de dicha sección. Cualquier variable que se defina dentro de las llaves del cuerpo de una función se interpreta como una variable local a esa función.</p>
 
 <h4>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h4>
-<p>Resp</p>
+<p>De acuerdo con la Benemérita Universidad Autónoma de Puebla, es aquella que se define fuera del cuerpo de cualquier función, normalmente al principio del programa, de la definición de constantes simbólicas y antes de cualquier función. El ámbito de una variable global son todas las funciones que componen el programa, cualquier función puede acceder a dichas variables para leer y escribir en ellas. Es decir, se puede hacer referencia a su dirección de memoria en cualquier parte del programa.</p>
+
+<h3 class="Azulado">¿Te gustó la página? (Controles)</h3>
+<button>Sí</button>
+<button>No</button>
+<button>Tal vez</button>
+
+<h3 class="Azulado">¿Cuánto? (Controles)</h3>
+<input type="range"/>
+
+<script src="codigo.js"></script>
+
+<h4>Ejercicio 1 - js</h4>
+<script>
+    calcularPotencias();
+    sumaAleatoria();
+</script>
+<h4>Ejercicio 3 - js</h4>
+<script>
+    contador();
+</script>
+<h4>Ejercicio 4 - js</h4>
+<script>
+    promedios(matrizEjemplo);
+</script>
+<h4>Ejercicio 5 - js</h4>
+<script>
+    inverso(numeroEjemplo);
+</script>
+<h4>Ejercicio 6 - js</h4>
+<p>Para los amantes de los autos la velocidad máxima y el consumo de combustible es muy importante, 
+    puesto que estos son indicadores del rendimiento del auto, es por eso que apoyado de funciones de JS, 
+    hice un programa que acomodara los autos de acuerdo a diferentes criterios.</p>
+<script>
+    const gestionarFlotaI = gestionarFlota();
+    gestionarFlotaI.agregarCoche('Toyota', 'Corolla', 2023, 196, 2.1);
+    gestionarFlotaI.agregarCoche('Honda', 'Civic', 2004, 210, 2.5);
+    gestionarFlotaI.agregarCoche('Ford', 'Focus', 2017, 174, 1.3);
+</script>
+<h5>Por velocidad máxima</h5>
+<script>
+    gestionarFlotaI.mostrarCochesOrdenados('velocidadMaxima');
+</script>
+<h5>Por consumo de Combustible</h5>
+<script>
+    gestionarFlotaI.mostrarCochesOrdenados('consumoCombustible');
+</script>
+
+</body>
 
 <h3>Referencias:</h3>
 <ul>
@@ -132,18 +193,11 @@
     <li>Fondos de imagen en HTML. (s. f.). DesarrolloWeb.com. <a href="https://desarrolloweb.com/articulos/1384.php">https://desarrolloweb.com/articulos/1384.php.</a></li>
     <li>¿Por qué minificar el CSS? (s. f.). CloudFlare. Recuperado 18 de febrero de 2024, de <a href="https://www.cloudflare.com/es-es/learning/performance/how-to-minify-css/#:~:text=La%20minificaci%C3%B3n%20de%20CSS%20reduce,c%C3%B3mo%20lo%20interpretan%20los%20navegadores">https://www.cloudflare.com/es-es/learning/performance/how-to-minify-css/#:~:text=La%20minificaci%C3%B3n%20de%20CSS%20reduce,c%C3%B3mo%20lo%20interpretan%20los%20navegadores.</a></li>
     <li>KeepCoding, R. (2023, 1 agosto). Unidades de medida en CSS. KeepCoding Bootcamps. <a href="https://keepcoding.io/blog/unidades-de-medida-en-css/#:~:text=pt%3A%20un%20punto%20es%20igual,la%20densidad%20de%20la%20pantalla">https://keepcoding.io/blog/unidades-de-medida-en-css/#:~:text=pt%3A%20un%20punto%20es%20igual,la%20densidad%20de%20la%20pantalla.</a></li>
+    <li>Diferencias entre JavaScript y Java. (s. f.). Java. Recuperado 19 de febrero de 2024, de <a href="https://www.java.com/es/download/help/java_javascript_es.html#:~:text=Java%20es%20un%20lenguaje%20de,se%20ejecuta%20en%20un%20explorador">https://www.java.com/es/download/help/java_javascript_es.html#:~:text=Java%20es%20un%20lenguaje%20de,se%20ejecuta%20en%20un%20explorador.</a></li>
+    <li>Digital Learning. (2017, 12 mayo). Métodos del objeto Date | Digital Learning. Digital Learning | Formación Online En Nuevas Tecnologías.<a href="https://www.digitallearning.es/intro-programacion-js/metodos-date.html#:~:text=M%C3%A9todos%20para%20establecer%20otros%20valores%20al%20objeto%20Date&text=o%20aplicando%20los%20m%C3%A9todos%20setFullYear,el%20valor%20que%20queramos%20modificar">https://www.digitallearning.es/intro-programacion-js/metodos-date.html#:~:text=M%C3%A9todos%20para%20establecer%20otros%20valores%20al%20objeto%20Date&text=o%20aplicando%20los%20m%C3%A9todos%20setFullYear,el%20valor%20que%20queramos%20modificar.</a></li>
+    <li>Morales, J. I. S. (s. f.). Variables locales y globales. <a href="https://ccia.ugr.es/~jfv/ed1/c/cdrom/cap6/cap62.htm">https://ccia.ugr.es/~jfv/ed1/c/cdrom/cap6/cap62.htm.</a></li>
+    <li>Zubikarai, S. (2022, 12 enero). Manual de arreglos en JavaScript: Métodos de arreglos de JS explicados con ejemplos. freeCodeCamp.org. <a href="https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/">https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/.</a></li>
 </ul>
-
-<h3 class="Azulado">¿Te gustó la página? (Controles)</h3>
-<button>Sí</button>
-<button>No</button>
-<button>Tal vez</button>
-
-<h3 class="Azulado">¿Cuánto? (Controles)</h3>
-<input type="range"/>
-
-<script>src="codigo.js"</script>
-</body>
 
 <footer>
 <p>Gracias por brindarnos esta herramienta VS. (Esta página fue hecha con <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>)</p>
