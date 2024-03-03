@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 100px;
+}
+
+h1 {
+    color: #005187c9;
+    text-align: center;
+}
+
+h2 {
+    color: #075081;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 15px;
+    color: #5abdff
+}
+
+p {
+    line-height: 1.5;
+}
+
+section {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+
