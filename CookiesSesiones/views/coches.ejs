@@ -34,8 +34,11 @@
 </div>
 <br>
 
-<% if(ultimocoche != '') { %>
-  <div>El último coche agregado fue <%- ultimocoche %>.</div>
-<% } %>
+<div class = "container">
+  <% if(ultimocoche != '') { %>
+    <div>El último coche agregado fue <%- ultimocoche %>.</div>
+  <% } %>
+</div>
+
 
 <%- include('includes/foot.ejs') %>
