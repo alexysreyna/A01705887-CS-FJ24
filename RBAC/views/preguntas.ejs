@@ -1,0 +1,46 @@
+<%- include('includes/head.ejs', {
+    username: username,
+    permisos: permisos
+}) %>
+
+<br>
+<div class="container">
+    <h1 class="title">Preguntas de los laboratorios</h1>
+    <div class="content">
+        <h3>¿Qué otros templating engines existen para node?</h3>
+        <ul>
+            <li>Existen otros templating engines como pug, handlebars, eta, blade y muchos más.</li>
+        </ul>
+        <h3>¿Qué beneficios encuentras en el estilo MVC?</h3>
+        <ul>
+            <li>Según la página web de EstradaWG, usar este modelo permite tener facilidad de mantenimiento y escalabilidad, así como integración de frameworks, separación de responsabilidades y soporte multiplataforma.</li>
+        </ul>
+        <h3>¿Encuentras alguna desventaja en el estilo arquitectónico MVC?</h3>
+        <ul>
+            <li>Ahora bien, si hablamos de desventajas la página dice que usar este estilo puede ser complicado al principio, requiere mayor cantidad de pruebas y puede generar sobrecarga de código aumentando el tiempo de desarrollo.</li>
+        </ul>
+        <h3>¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?</h3>
+        <ul>
+            <li>Puedes reutilzar código, es más seguro y faciilta las pruebas.</li>
+        </ul>
+        <h3>¿Qué es SQL injection y cómo se puede prevenir?</h3>
+        <ul>
+            <li>Según la página web de LacnicBlog, sucede cuando un atacante inserta código SQL malicioso en una consulta SQL que se envía a una base de datos podiendo dañarla, asimismo, las maneras de protegerse son: uso de consultas parametrizadas: prepared statements, uso de procedimientos: stored procedures, validación de entrada de datos de usuarios y escapar todas las entradas permitidas de los usuarios.</li>
+        </ul>
+        <h3>¿Qué otras formas de autentificación existen?</h3>
+        <ul>
+            <li>Existen otros métodos como lo es passport, OAuth y JWT.</li>
+        </ul>
+
+        <br>
+        <h1 class="title">Referencias</h1>
+        <ul>
+            <li>Ventajas y desventajas de MVC en ASP.NET Core. (s. f.). Estrada Web Group. Recuperado 17 de marzo de 2024, de <a href = "https://estradawebgroup.com/Post/Ventajas-y-desventajas-de-MVC-en-ASP-NET-Core/20649">https://estradawebgroup.com/Post/Ventajas-y-desventajas-de-MVC-en-ASP-NET-Core/20649.</a></li>
+            <li>Gianni. (2023, 21 marzo). Cómo prevenir un ataque de inyección de SQL. LACNIC Blog. <a href = "https://blog.lacnic.net/ciberseguridad/como-prevenir-un-ataque-de-inyeccion-de-sql">https://blog.lacnic.net/ciberseguridad/como-prevenir-un-ataque-de-inyeccion-de-sql.</a></li>
+        </ul>
+
+    </div>
+</div>
+<br>
+
+<%- include('includes/foot.ejs') %>
